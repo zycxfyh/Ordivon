@@ -95,7 +95,7 @@ jobs:
 
       - name: Upload delivery bundle
         if: steps.check.outputs.skip != 'true'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: aegisos-delivery-bundle
           path: delivery-bundle
